@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<a href="/">
+    <h1>LOGO</h1>
+</a>
 
-<h1>
-<a href="{% url 'home' %}">LOGO</a>
-</h1>
+<form method="GET" action="{% url 'home' %}">
+    <input type="text" name="q" placeholder="search topics..." />
+</form>
 
-<body>
-
-</body>
-</html>
+<hr>
