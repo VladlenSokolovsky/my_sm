@@ -14,6 +14,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 from .local import BASE_DIR
+import os
 
 # Application definition
 
@@ -98,6 +99,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / '../static',
+]
+
+# STATIC_ROOT =
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

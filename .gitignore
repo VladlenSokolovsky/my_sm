@@ -5,3 +5,4 @@ __pycache__
 .idea
 venv
 my_SM/settings/local.py
+.DS_Store
